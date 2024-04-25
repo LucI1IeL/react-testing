@@ -1,0 +1,57 @@
+[
+  {
+    "name": "Greek Salad",
+    "description": "Romaine blend, feta cheese, red onions, beets, mild peppers, black olives, grape tomatoes. Served with Nikki's Greek dressing",
+    "imgUrl": "https://www.cookingclassy.com/wp-content/uploads/2018/02/greek-salad-1.jpg",
+    "price": {
+      "Individual": 6.95,
+      "Small": 10.45,
+      "Large": 12.95,
+      "Family": 21.95
+    }
+  },
+  {
+    "name": "Antipasto Salad",
+    "description": "Romaine blend, mozzarella cheese, ham, salami, red onions, black olives, mild peppers, grape tomatoes, Served with Italian dressing",
+    "imgUrl": "https://www.kyleecooks.com/wp-content/uploads/2021/06/Italian-Deli-Pasta-Salad-10-1200x1800.jpg",
+    "price": {
+      "Individual": 6.95,
+      "Small": 10.45,
+      "Large": 12.95,
+      "Family": 21.95
+    }
+  },
+  {
+    "name": "Chef Salad",
+    "description": "Romaine blend, feta cheese, red onions, beets, mild peppers, black olives, grape tomatoes. Served with Nikki's Greek dressing",
+    "imgUrl": "https://nowcookthis.com/wp-content/uploads/2021/05/classic-chef-salad-4.jpg",
+    "price": {
+      "Individual": 6.95,
+      "Small": 10.45,
+      "Large": 12.95,
+      "Family": 21.95
+    }
+  },
+  {
+    "name": "Garden Salad",
+    "description": "Romaine blend, feta cheese, red onions, beets, mild peppers, black olives, grape tomatoes. Served with Nikki's Greek dressing",
+    "imgUrl": "https://neighborfoodblog.com/wp-content/uploads/2020/03/garden-salad-3.jpg",
+    "price": {
+      "Individual": 5.25,
+      "Small": 7.95,
+      "Large": 10.45,
+      "Family": 18.25
+    }
+  },
+  {
+    "name": "Cobb Salad",
+    "description": "Romaine blend, feta cheese, red onions, beets, mild peppers, black olives, grape tomatoes. Served with Nikki's Greek dressing",
+    "imgUrl": "https://easychickenrecipes.com/wp-content/uploads/2020/01/chicken-cobb-salad-recipe-5.jpg",
+    "price": {
+      "Individual": 6.95,
+      "Small": 10.45,
+      "Large": 12.95,
+      "Family": 21.95
+    }
+  }
+]

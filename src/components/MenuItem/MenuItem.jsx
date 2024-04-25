@@ -1,15 +1,13 @@
-import React from 'react'
+import { Fragment } from "react";
 
-const menuitem = ({name, description, imgUrl, price}) => {
+export const menuitem = ({ name, description, dressing, imgUrl, price }) => {
   return (
-    <div style={{display: 'flex'}}>
-      <img src="https://www.cookingclassy.com/wp-content/uploads/2018/02/greek-salad-1.jpg" alt="salad" style={{width: '250px'}} />
-      <div>
-        <h2>Greek Salad</h2>
-        <p>Romaine blend, feta cheese, red onions, beets, mild peppers, black olives, grape tomatoes. Served with Nikki's Greek dressing</p>
-      </div>
-    </div>
-  );
+    <Fragment>
+      <img src={imgUrl} alt={name} />
+      <h2>{name}</h2>
+      <p>{description}<span>{dressing}</span></p>
+    </Fragment>
+  )
 };
 
 export default menuitem;

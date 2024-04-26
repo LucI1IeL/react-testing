@@ -9,7 +9,8 @@
       "Small": 10.45,
       "Large": 12.95,
       "Family": 21.95
-    }
+    },
+    "availability": "available"
   },
   {
     "name": "Antipasto Salad",
@@ -21,7 +22,8 @@
       "Small": 10.45,
       "Large": 12.95,
       "Family": 21.95
-    }
+    },
+    "availability": "available"
   },
   {
     "name": "Chef Salad",
@@ -33,7 +35,8 @@
       "Small": 10.45,
       "Large": 12.95,
       "Family": 21.95
-    }
+    },
+    "availability": "available"
   },
   {
     "name": "Garden Salad",
@@ -45,7 +48,8 @@
       "Small": 7.95,
       "Large": 10.45,
       "Family": 18.25
-    }
+    },
+    "availability": "available"
   },
   {
     "name": "Cobb Salad",
@@ -57,6 +61,7 @@
       "Small": 10.45,
       "Large": 12.95,
       "Family": 21.95
-    }
+    },
+    "availability": "available"
   }
 ]

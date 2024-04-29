@@ -1,17 +1,18 @@
 import PropType from 'prop-types';
 import { AiFillCheckCircle } from "react-icons/ai";
-import './MenuItem.css'
+import { AiFillCloseCircle } from "react-icons/ai";
+import css from './MenuItem.module.css';
 
 const getClassNameForAvailability = availability => {
   switch (availability) {
     case 'Available':
-      return 'available';
+      return css.available;
     case 'Few Left':
-      return 'fewLeft';
+      return css.fewLeft;
     case 'Not available':
-      return 'notAvailable';
+      return css.notAvailable;
     case 'Seasonal':
-      return 'seasonal';
+      return css.seasonal;
     default:
       return '';
   };
@@ -22,14 +23,14 @@ const MenuItem = ({ name, description, dressing, imgUrl, price, availability }) 
   const availabilityClass = getClassNameForAvailability(availability)
 
   return (
-    <div className={`menuItemContainer ${availabilityClass}`}>
-      <img className="menuItemImg" src={imgUrl} alt={name} />
-      <div className="menuItemInfo">
-        <h2 className="menuItemName">
-          {name}<span className={`menuItemIcon ${availabilityClass}`}><AiFillCheckCircle /></span>
+    <div className={`${css.menuItemContainer} ${availabilityClass}`}>
+      <img className={css.menuItemImg} src={imgUrl} alt={name} />
+      <div className={css.menuItemInfo}>
+        <h2 className={`${css.menuItemName} ${availabilityClass}`}>
+          {name}<span className={`${css.menuItemIcon} ${availabilityClass}`}><AiFillCheckCircle /></span>
         </h2>
-        <p className="menuItemDescription">{description}<span>{dressing}</span></p>
-        <p className="menuItemPrice">Price: ${price.Individual.toFixed(2)}</p>
+        <p className={css.menuItemDescription}>{description}<span>{dressing}</span></p>
+        <p className={css.menuItemPrice}>Price: ${price.Individual.toFixed(2)}</p>
       </div>
     </div>
   )

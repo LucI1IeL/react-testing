@@ -1,11 +1,11 @@
 import PropType from 'prop-types';
-import MenuItem from "components/MenuItem/MenuItem";
-import salads from "../data/salads.json";
-import './MenuItemList.css'
+import MenuItem from 'components/MenuItem/MenuItem';
+// import salads from '../data/salads.json';
+import css from './MenuItemList.module.css';
 
-const MenuItemList = () => {
+const MenuItemList = ({salads}) => {
   return (
-    <div className="menuItemListContainer">
+    <div className={css.menuItemListContainer}>
       {salads.map(({ name, description, dressing, imgUrl, price, availability }) => (
         <MenuItem
           key={name}

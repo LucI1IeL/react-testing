@@ -1,28 +1,30 @@
+import React from 'react';
 import PropType from 'prop-types';
 import { AiFillCheckCircle } from "react-icons/ai";
 import { AiFillCloseCircle } from "react-icons/ai";
 import css from './MenuItem.module.css';
 
-const getClassNameForAvailability = availability => {
-  switch (availability) {
-    case 'Available':
-      return css.available;
-    case 'Few Left':
-      return css.fewLeft;
-    case 'Not available':
-      return css.notAvailable;
-    case 'Seasonal':
-      return css.seasonal;
-    default:
-      return '';
+class MenuItem extends React.Component {
+  getClassNameForAvailability(availability) {
+    switch (availability) {
+      case 'Available':
+        return css.available;
+      case 'Few Left':
+        return css.fewLeft;
+      case 'Not available':
+        return css.notAvailable;
+      case 'Seasonal':
+        return css.seasonal;
+      default:
+        return '';
+    };
   };
-};
-
-const MenuItem = ({ name, description, dressing, imgUrl, price, availability }) => {
   
-  const availabilityClass = getClassNameForAvailability(availability)
-
-  return (
+  render() {
+    const { name, description, dressing, imgUrl, price, availability } = this.props
+    const availabilityClass = this.getClassNameForAvailability(availability);
+    
+    return (
     <div className={`${css.menuItemContainer} ${availabilityClass}`}>
       <img className={css.menuItemImg} src={imgUrl} alt={name} />
       <div className={css.menuItemInfo}>
@@ -34,9 +36,9 @@ const MenuItem = ({ name, description, dressing, imgUrl, price, availability }) 
       </div>
     </div>
   )
+  }
 };
-
-export default MenuItem
+  
 
 MenuItem.propType = {
   name: PropType.string.isRequired,
@@ -48,3 +50,5 @@ MenuItem.propType = {
         Individual: PropType.number.isRequired
       }).isRequired,
 };
+
+export default MenuItem;

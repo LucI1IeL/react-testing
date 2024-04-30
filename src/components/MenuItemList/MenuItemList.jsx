@@ -1,10 +1,13 @@
+import React from 'react';
 import PropType from 'prop-types';
 import MenuItem from 'components/MenuItem/MenuItem';
 // import salads from '../data/salads.json';
 import css from './MenuItemList.module.css';
 
-const MenuItemList = ({salads}) => {
-  return (
+class MenuItemList extends React.Component {
+  render() {
+    const {salads} = this.props
+    return (
     <div className={css.menuItemListContainer}>
       {salads.map(({ name, description, dressing, imgUrl, price, availability }) => (
         <MenuItem
@@ -18,9 +21,8 @@ const MenuItemList = ({salads}) => {
       ))}
     </div>
   );
+  }
 };
-
-export default MenuItemList;
 
 MenuItemList.propType = {
   salads: PropType.arrayOf(
@@ -36,3 +38,5 @@ MenuItemList.propType = {
     })
   ).isRequired
 };
+
+export default MenuItemList;

@@ -1,13 +1,27 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import css from './OrderOptions.module.css';
 
 class OrderOptions extends React.Component {
+  static propTypes = {
+    onOrder: PropTypes.func.isRequired,
+    salads: PropTypes.arrayOf(
+      PropTypes.shape({
+        name: PropTypes.string.isRequired
+      })
+    ).isRequired
+  };
+
   render() {
-    const { salads } = this.props;
+    const { onOrder, salads } = this.props;
     return (
-      <div>
+      <div className={css.orderOptionsContainer}>
         {salads.map(salad =>
-          <button>{salad.name}</button>)}
+          <button
+            key={salad.name}
+            onClick={() => onOrder(salad.name)}
+            className={css.orderOptionsBtn}>
+            Order {salad.name}</button>)}
       </div>
     );
   };

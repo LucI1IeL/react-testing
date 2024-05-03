@@ -1,13 +1,18 @@
 .menuItemContainer {
   display: flex;
   flex-direction: column;
-  row-gap: 8px;
+  row-gap: 12px;
   height: auto;
   width: 325px;
   padding: 8px;
   border-radius: 4px;
   background-color: rgb(208, 241, 208);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.menuItemOrderContainer {
+  display: flex;
+  justify-content: space-between;
 }
 
 .menuItemImg {
@@ -30,6 +35,32 @@
 
 .menuItemDressing {
   font-style: italic;
+}
+
+/* .menuItemPrice {
+  margin-left: 25px;
+} */
+
+.menuItemOrderBtn {
+  display: flex;
+  align-items: center;
+  padding: 8px 30px;
+  border-radius: 50px;
+  margin-right: 25px;
+  border-width: 0;
+  color: rgb(41, 53, 41);
+  background-color: rgb(255, 253, 109);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+}
+
+.menuItemOrderBtn:hover {
+  cursor: pointer;
+  background-color: rgb(243, 241, 104);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.26);
+}
+
+.menuItemOrderIcon {
+  margin-left: 8px;
 }
 
 .available {

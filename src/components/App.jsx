@@ -8,11 +8,11 @@ import salads from './data/salads.json';
 class App extends Component {
   render() {
     return (
-      <div>
+      <div className='appContainer'>
         <Menu title="Salads Menu">
           <MenuItemList salads={salads} />
         </Menu>
-        <OrderCounter salads={salads}/>
+        <OrderCounter salads={salads} />
       </div>
     );
   };

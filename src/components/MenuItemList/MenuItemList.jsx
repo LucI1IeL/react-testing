@@ -5,10 +5,11 @@ import css from './MenuItemList.module.css';
 
 class MenuItemList extends React.Component {
   render() {
-    const {salads} = this.props
+    const { salads } = this.props
+
     return (
       <div className={css.menuItemListContainer}>
-        {salads.map(({ name, description, dressing, imgUrl, price, availability }) =>
+        {/* {salads.map(({ name, description, dressing, imgUrl, price, availability }) =>
           <MenuItem
             key={name}
             name={name}
@@ -18,7 +19,7 @@ class MenuItemList extends React.Component {
             price={price}
             availability={availability}
           />
-        )}
+        )} */}
       </div>
     )
   }

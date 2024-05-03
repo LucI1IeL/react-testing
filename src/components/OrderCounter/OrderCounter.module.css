@@ -1,0 +1,32 @@
+.orderCounterContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 30px;
+}
+
+.cardsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  padding-bottom: 30px;
+}
+
+.resetButton {
+  display: flex;
+  align-items: center;
+  padding: 8px 30px;
+  border-radius: 50px;
+  margin-right: 25px;
+  border-width: 0;
+  color: rgb(41, 53, 41);
+  background-color: rgb(255, 109, 109);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+}
+
+.resetButton:hover {
+  cursor: pointer;
+  background-color: rgb(243, 104, 104);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.26);
+}

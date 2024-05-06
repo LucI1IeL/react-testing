@@ -41,8 +41,8 @@ class MenuItem extends React.Component {
       <div className={css.menuItemContainer}>
         <img className={css.menuItemImg} src={imgUrl} alt={name} />
         <div>
-          <h1 className={css.menuItemName}>{name}<AiFillCheckCircle className={`${css.menuItemIcon} ${availabilityClass}`} /></h1>
-          <p className={`${css.menuItemAvailability} ${availabilityClass}`}>{availability}</p>
+          <h1 className={css.menuItemName}>{name}</h1>
+          <p className={`${css.menuItemAvailability} ${availabilityClass}`}>{availability}<AiFillCheckCircle className={`${css.menuItemIcon} ${availabilityClass}`} /></p>
         </div>
         <p className={css.menuitemDescription}>{description}<span className={css.menuItemDressing}>{dressing}</span></p>
         <div className={css.menuItemOrderContainer}>

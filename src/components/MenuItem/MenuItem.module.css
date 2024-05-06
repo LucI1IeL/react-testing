@@ -33,6 +33,12 @@
   column-gap: 12px;
 }
 
+.menuItemAvailability {
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+}
+
 .menuItemDressing {
   font-style: italic;
 }

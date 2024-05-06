@@ -15,7 +15,7 @@ class MenuItem extends React.Component {
         price: PropTypes.object,
         availability: PropTypes.string,
       })
-    ).isRequired
+    )
   };
   
   getClassNameForAvailability(availability) {

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Menu from './Menu/Menu';
 import MenuItemList from './MenuItemList/MenuitemList';
 import OrderCounter from './OrderCounter/OrderCounter';
+import { Inventory } from './Inventory/Inventory';
 import salads from './data/salads.json';
 
 // class components structure
@@ -13,6 +14,7 @@ class App extends Component {
           <MenuItemList salads={salads} />
         </Menu>
         <OrderCounter salads={salads} />
+        <Inventory/>
       </div>
     );
   };
